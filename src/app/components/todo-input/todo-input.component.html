@@ -2,6 +2,6 @@
   <input type="text" [(ngModel)]="todoText" value={{todoText}} />
 <button class="btn btn-primary" (click)="addTodo()"> Submit</button>
 <div *ngFor="let todo of todoService.getTodos()">
-    <app-todo-item [Todo]="todo" ></app-todo-item>
+    <app-todo-item [todo]="todo" ></app-todo-item>
 </div>
 </div>
